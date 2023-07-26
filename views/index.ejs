@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>메인입니다</h1>
+    <table border="1">
+    <% console.log(member);%>
+   
+    <% member.forEach( mem => { %>
+        id : <%= mem.id %><br>
+        name : <%= mem.name %><br>
+        addr : <%= mem.addr %><hr width="150px" align="left">
+    <% }); %>
+    </table>
+</body>
+</html>
